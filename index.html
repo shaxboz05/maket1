@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Design</title>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 1100px;
+	height: 1500px;
+	margin: 0 auto;
+}
+.header{
+	height: 133px;
+	background-color: #333333 ;
+}
+.row{
+	width: 960px;
+	margin: 0 auto;
+}
+.header .row .hleft, .header .row .hright{
+	width: 480px;
+	float: left;
+}
+.hleft div{
+	font-family: "Myriad Pro";
+	font-size: 60px;
+	color: #eeeeee;
+	line-height: 133px;
+}
+.header .hright ul{
+	list-style: none;
+	margin-top: 72px;
+}
+.header .hright ul li{
+	color: #eeeeee;
+	font-family: "Arial";
+	float: left;
+
+}
+.header .hright ul li a{
+	text-decoration-line: none;
+	color: inherit;
+	margin-left: 10px;
+}
+.header .hright ul li .active{
+	color: #00aeef;
+}
+.title{
+	height: 208px;
+	border: 1px solid white;
+}
+.title .row{
+	width: 960px;
+	height: 140px;
+	margin-top: 65px;	
+	border-bottom: dotted #bbbbbb;			
+}
+.ttop{
+	font-family: ;
+	color: #333333;
+	font-size: 59px;
+	font-weight: bold;
+}
+.tbottom{
+	font-family: "Myriad Pro";
+	color: #bbbbbb;
+	font-size: 49px;
+}
+.about{
+	height: 188px ;
+	border: 1px solid white;
+}
+.about .row{
+	width: 960px;
+	height: 150px;
+	margin-top: 36px;
+	border-bottom: dotted #bbbbbb;
+}
+.about .row .atext{
+	font-family: ;
+	color: #555555;
+	font-size: 32px;
+}
+.about .row .atext .bold{
+	font-weight: bold;
+}
+.boxs{
+	border: 1px solid white;
+	height: 452px;	
+}
+.boxs .row{
+	width: 960px;
+	height: 404px;
+	margin-top: 48px;
+	border-bottom: dotted #bbbbbb;
+}
+.boxs .row .box1 .boxrow{
+	width: 235px;
+	margin: 22px;
+}
+.boxs .row .box2 .boxrow{
+	width: 235px;
+	margin: 22px;
+}
+.boxs .row .box3 .boxrow{
+	width: 235px;
+	margin: 22px;
+}
+.boxs .row .box1{
+	float: left;
+	width: 278px;
+	height: 352px;
+	background-color: #00aeef;
+	border-radius: 15px;
+}
+.boxs .row .box2{
+	float: right;
+	width: 278px;
+	height: 352px;
+	margin-left: 62px;
+	background-color: #00aeef;
+	border-radius: 15px;
+}
+.boxs .row .box3{
+	float: right;
+	width: 278px;
+	height: 352px;
+	margin-left: 62px;
+	background-color: #00aeef;
+	border-radius: 15px;
+}
+.boxs .row .box1 .boxrow .textname{
+	border-bottom: dotted white;
+	text-align: center;
+	font-size: 39px;
+	color: #ffffff;
+}
+.boxs .row .box2 .boxrow .textname2{
+	border-bottom: dotted white;
+	text-align: center;
+	font-size: 39px;
+	color: #ffffff;
+}
+.boxs .row .box3 .boxrow .textname3{
+	border-bottom: dotted white;
+	text-align: center;
+	font-size: 39px;
+	color: #ffffff;
+}
+.boxs .row .box1 .boxrow .text1{
+	margin-top: 26px;
+	text-align: center;
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 20px;
+}
+.boxs .row .box2 .boxrow .text2{
+	margin-top: 26px;
+	text-align: center;
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 20px;
+}
+.boxs .row .box3 .boxrow .text3{
+	margin-top: 26px;
+	text-align: center;
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 20px;
+}
+.boxs .row .box1 .boxrow .moretext{
+	width: 232px;
+	height: 42px;
+	margin-top: 32px;
+	border: 1px solid blue;
+	background-color:#0076a3;
+	border-radius: 10px;
+}
+.boxs .row .box1 .boxrow .moretext a{
+	line-height: 42px;
+	margin: 28px;
+	text-decoration-line: none;
+	color: white;
+}
+.boxs .row .box2 .boxrow .moretext2{
+	width: 232px;
+	height: 42px;
+	margin-top: 32px;
+	border: 1px solid blue;
+	background-color:#0076a3;
+	border-radius: 10px;
+}
+.boxs .row .box2 .boxrow .moretext2 a{
+	line-height: 42px;
+	margin: 28px;
+	text-decoration-line: none;
+	color: white;
+}
+.boxs .row .box3 .boxrow .moretext3 {
+	width: 232px;
+	height: 42px;
+	margin-top: 32px;
+	border: 1px solid blue;
+	background-color:#0076a3;
+	border-radius: 10px;
+}
+.boxs .row .box3 .boxrow .moretext3 a {
+	line-height: 42px;
+	margin: 28px;
+	color: white;
+	text-decoration-line: none;
+}
+.details{
+	width: 1100px;
+	height: 453px;
+}
+.details .row{
+	width: 960px;
+	height: 453px;
+	border-bottom: dotted #bbbbbb;
+}
+.details .row .dleft{
+	width: 481px;
+	height: 385px;
+	border-right:dotted #bbbbbb;
+	margin-top: 34px;
+	float: left;
+}
+.details .row .dleft .sarlavha{
+	font-size: 24px;
+	color: #555555;
+}
+.details .row .dleft .qator1{
+	margin-top: 31px;
+	display: flex;
+}
+.details .row .dleft .qator2{
+	display: flex;
+	margin-top: 31px;
+}
+.details .row .dleft .qator3{
+	display: flex;
+	margin-top: 31px;
+}
+.details .row .dleft .text1 .tabout{
+	margin: 10px;
+	font-size: 14px;
+	color: #555555;
+}
+.details .row .dleft .text2 .tabout2{
+	margin: 10px;
+	font-size: 14px;
+	color: #555555;
+}
+.details .row .dleft .text3 .tabout3{
+	margin: 10px;
+	font-size: 14px;
+	color: #555555;
+}
+.details .row .dleft .text1 .tname{
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #555555;
+}
+.details .row .dleft .text2 .tname2{
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #555555;
+}
+.details .row .dleft .text3 .tname3{
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #555555;
+}
+.details .row .dleft .text1 .tssilka a{
+	text-decoration-line: none;
+	font-size: 14px;
+	font-family: "Arial";
+	color: #00aeef;
+	margin-left: 10px;
+}
+.details .row .dleft .text2 .tssilka2 a{
+	text-decoration-line: none;
+	font-size: 14px;
+	font-family: "Arial";
+	color: #00aeef;
+	margin-left: 10px;
+}
+.details .row .dleft .text3 .tssilka3 a{
+	text-decoration-line: none;
+	font-size: 14px;
+	font-family: "Arial";
+	color: #00aeef;
+	margin-left: 10px;
+}
+.details .row .dleft .rasm1{
+	width: 85px;
+	height: 84px;
+	border: 1px solid white;
+}
+.details .row .dleft .rasm2{
+	width: 85px;
+	height: 84px;
+	border: 1px solid white;
+}
+.details .row .dleft .rasm3{
+	width: 85px;
+	height: 84px;
+	border: 1px solid white;
+}
+.details .row .dright{
+	width: 475px;
+	height: 385px;
+	margin-top: 34px;
+	float: right;
+}
+.details .row .dright .sarlavha{
+	font-size: 24px;
+	margin-left: 50px;
+	color: #555555;
+}
+.details .row .dright .fotoname{
+	font-size: 20px;
+	color: #888888;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+.details .row .dright .foto img{
+	width: 430px;
+	height: 208px;
+	margin-left: 50px;
+	margin-top: 5px;
+}
+.details .row .dright .about{	
+	height: 60px;
+	font-family: "Arial";
+	font-size: 14px;
+	margin-left: 50px;
+	margin-top: 10px;
+	color: #555555 ;
+}
+.details .row .dright .dssilka a{
+	text-decoration-line: none;
+	font-family: "Arial";
+	font-size: 14px;
+	color: #00aeef;
+	margin-left: 50px;
+}
+.info{
+	font-size: 16px;
+	font-family: "Arial";
+	color: #888888;
+	margin-top: 20px;
+	margin-left: 65px;
+}
+@media screen and (min-width:0px) and (max-width:420px){
+	.container{
+		width: 400px;
+		height: 3000px;
+		margin: 0 auto;
+	}
+	.row{
+		width: 400px;
+		margin: 0 auto;	
+	}
+	.hleft div{
+		text-align: center;
+		width: 400px;
+		height: 40px;
+		font-family: "Myriad Pro";
+		font-size: 50px;
+		color: skyblue;
+	}
+	.header .hright ul{
+		list-style: none;
+	}
+	.header .hright ul li{
+		color: white;
+		font-size: 14px;
+		font-family: "Arial";
+		float:left;
+	}
+	.header .hright ul li .active{
+		color: rebeccapurple;
+	}	
+	.title{
+		height: 110px;
+		border: 1px solid white;
+}
+	.title .row{
+		width: 340px;
+		height: 90px;
+		margin-top: 25px;	
+		border-bottom: dotted #bbbbbb;
+	}
+	.ttop{
+		font-family: ;
+		color: #333333;
+		font-size: 23px;
+		font-weight:bold;
+	}
+	.tbottom{
+		font-family: "Myriad Pro";
+		color: #bbbbbb;
+		font-size: 21px;
+		margin-top: 10px;
+}
+	.about{
+		width: 420;
+		height: 140px ;
+		border: 1px solid white;
+	}
+	.about .row{
+		width: 340px;
+		height: 140px;
+		margin-top: 15px;
+		border-bottom: dotted #bbbbbb;
+	}
+	.about .row .atext{
+		text-align: center;
+		font-family: ;
+		color: #555555;
+		font-size: 20px;
+	}
+	.boxs{
+		width: 410px;
+		border: 1px solid white;
+		height: 1080px;	
+}
+	.boxs .row{
+		width: 340px;
+		height: 1080px;
+		border-bottom: dotted #bbbbbb;
+}
+	.boxs .row .box1 .boxrow{
+		margin:  0 auto;
+		width: 230px;
+		margin: 25px;
+}
+	.boxs .row .box2 .boxrow{
+		width: 230px;
+		margin: 25px;
+}
+	.boxs .row .box3 .boxrow{
+		width: 230px;
+		margin: 25px;
+}
+	.boxs .row .box1{
+		margin-left: 30px ;
+		float: none;
+		width: 282px;
+		height: 330px;
+		background-color: #00aeef;
+		border-radius: 15px;
+}
+	.boxs .row .box2{
+		margin: 0 auto;
+		float: none;
+		width: 282px;
+		height: 330px;
+		background-color: #00aeef;
+		border-radius: 15px;
+}
+	.boxs .row .box3{
+		margin: 0 auto;
+		float: none;
+		width: 282px;
+		height: 330px;
+		background-color: #00aeef;
+		border-radius: 15px;
+}
+	.details{
+		margin: 0 auto;
+		width: 420px;
+		height: 1000px;
+}
+	.details .row{
+		margin: 0 auto;
+		width: 340px;
+		height: 1015px;
+		float: none;
+		border-bottom: dotted #bbbbbb;
+	}
+	.details .row .dleft{
+	width: 340px;
+	height: 500px;
+	border-right: none;
+	margin-top: 34px;
+}
+.details .row .dleft .sarlavha{
+	text-align: center;
+	margin-top: 25px;
+	font-size: 22px;
+	color: #555555;
+}
+.details .row .dright{
+	width: 420px;
+	height: 430px;
+	margin-top: 60px;
+}
+.details .row .dleft .qator1{
+	display: flex;
+	margin-top: 10px;
+}
+.details .row .dleft .text1 .tabout{
+	margin: 10px;
+	font-size: 16px;
+	color: #555555;
+}
+.details .row .dleft .text1 .tname{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #555555;
+}
+.details .row .dleft .text1 .tssilka a{
+	text-decoration-line: none;
+	font-size: 16px;
+	font-family: "Arial";
+	color: #00aeef;
+	margin-left: 10px;
+}
+.details .row .dleft .rasm1{
+	margin-top: 12px;
+	width: 95px;
+	height: 95 px;
+	border: 1px solid white;
+}
+.details .row .dleft .qator2{
+	display: flex;
+	margin-top: 20px;
+}
+.details .row .dleft .text2 .tabout2{
+	margin: 10px;
+	font-size: 16px;
+	color: #555555;
+}
+.details .row .dleft .text2 .tname2{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #555555;
+}
+.details .row .dleft .text2 .tssilka2 a{
+	text-decoration-line: none;
+	font-size: 16px;
+	font-family: "Arial";
+	color: #00aeef;
+	margin-left: 10px;
+}
+.details .row .dleft .rasm2{
+	margin-top: 12px;
+	width: 95px;
+	height: 95px;
+	border: 1px solid white;
+}
+.details .row .dleft .qator3{
+	display: flex;
+	height: 180px;
+	margin-top: 20px;
+	border-bottom: dotted #bbbbbb;
+}
+.details .row .dleft .text3 .tabout3{
+	margin: 10px;
+	font-size: 16px;
+	color: #555555;
+}
+.details .row .dleft .text3 .tname3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #555555;
+}
+.details .row .dleft .text3 .tssilka3 a{
+	text-decoration-line: none;
+	font-size: 16px;
+	font-family: "Arial";
+	color: #00aeef;
+	margin-left: 10px;
+}
+.details .row .dleft .rasm3{
+	margin-top: 12px;
+	width: 95px;
+	height: 95px;
+	border: 1px solid white;
+}
+.details .row .dright .sarlavha{
+	margin-left: 78px;
+	font-size: 30px;
+	color: #555555;
+}
+.details .row .dright .fotoname{
+	font-size: 22px;
+	color: #888888;
+	margin-top: 10px;
+	margin-left: 78px;
+}
+.details .row .dright .foto img{
+	width: 340px;
+	height: 200px;
+	margin-left: 78px;
+	margin-top: 8px;
+}
+	.details .row .dright .about{	
+		height: 90px;
+		font-family: "Arial";
+		font-size: 15px;
+		margin-left: 78px;
+		margin-top: 5px;
+		color: #555555 ;
+}
+.details .row .dright .dssilka a{
+	text-decoration-line: none;
+	font-family: "Arial";
+	font-size: 16px;
+	color: #00aeef;
+	margin-left: 78px;
+}
+.info{
+	font-size: 12px;
+	font-family: "Arial";
+	color: #888888;
+	margin-left: 38px;
+}
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="row">
+				<div class="hleft">
+					<div>Design Studios</div>
+				</div>
+				<div class="hright">
+					<ul>
+						<li><a href="" class="active">Home</a></li>
+						<li>--</li>
+						<li><a href="">About Us</a></li>
+						<li>--</li>
+						<li><a href="">Services</a></li>
+						<li>--</li>
+						<li><a href="">Portfolio</a></li>
+						<li>--</li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<div class="title">
+				<div class="row">
+					<div class="ttop">Clean <font color="#00bff3">&</font> Professional Web Design</div>
+					<div class="tbottom">Providing High Quality Web Solutions</div>
+				</div>
+			</div>
+			<div class="about">
+				<div class="row">
+					<div class="atext">We provide <strong>first class</strong> web solutions for organizations and small 
+businesses looking to make a <strong>big impact</strong> online. Our services include web design, online marketing campaigns, and search engine optimization.</div>
+				</div>
+			</div>
+			<div class="boxs">
+				<div class="row">
+					<div class="box1">
+						<div class="boxrow">
+							<div class="textname">web design</div>
+							<div class="text1">We provide web design solutions of the very highest order. We’ll work with you from the start to understand your exact requirements and will  continuosly work with you to ensure that you’re happy with the final site that you purchase.</div>
+							<div class="moretext">
+								<a href="">GET MORE DETAILS >></a>
+							</div>
+							</div>
+					</div>
+					<div class="box2">
+						<div class="boxrow">
+							<div class="textname2">marketing</div>
+							<div class="text2">We can help you promote your business in both the online and offline worlds. We specialize in a range of fields from viral marketing campaigns to managing paid advertising accounts for you. Your brand will be in safe hands with us.</div>
+							<div class="moretext2">
+								<a href="">GET MORE DETAILS >></a>
+							</div>
+						</div>
+					</div>
+					<div class="box3">
+						<div class="boxrow">
+							<div class="textname3">optimization</div>
+							<div class="text3">Want to drive more traffic to your site? You’ve come the right place! We can increase traffic to your site in an organic and effective manner that will ensure more people are aware of your business and the products/services you offer</div>
+							<div class="moretext3">
+								<a href="">GET MORE DETAILS >></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="details">
+				<div class="row">
+					<div class="dleft">
+						<div class="sarlavha">Client Testimonials</div>
+						<div class="qator1">
+							<div class="rasm1">
+								<img src="ramos.jpg" width="70px">
+							</div>
+							<div class="text1">
+								<div class="tabout">"Design studios created a beautiful website and were a pleasure to work with during the whole process...”</div>
+								<div class="tname">Sarah Johnson</div>
+								<div class="tssilka"> <a href="">Web Design Media</a></div>								
+							</div>
+						</div>
+						<div class="qator2">
+								<div class="rasm2">
+									<img src="levandoniski.jpg" width="70px">
+								</div>
+								<div class="text2">
+									<div class="tabout2">"I only have good things to say about Design Studios - I highly recommend them for promotional work...”</div>
+									<div class="tname2">Kate Saunders</div>
+									<div class="tssilka2"><a href="">Software Solutions</a></div>
+								</div>
+						</div>
+						<div class="qator3">
+							<div class="rasm3">
+								<img src="ronaldo.jpg" width="70px">
+							</div>
+							<div class="text3">
+								<div class="tabout3">"Design Studios have increased traffic to my site by over 200% in just a few months - great work guys!”</div>
+								<div class="tname3">Dave Cole</div>
+								<div class="tssilka3"><a href="">Global Web Services</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="dright">
+						<div class="sarlavha">Featured Project</div>
+						<div class="fotoname">Yoshi Online Marketing Campaign</div>
+						<div class="foto">
+							<img src="Снимок.JPG">
+						</div>
+						<div class="about">This project involved organizing an online marketing campaign to help promote the Yoshi brand. The result of this campaign resulted in a 200% increase in Yoshi’s sales over a six month period of time. </div>
+						<div class="dssilka"> <a href="">Click Here For More Details >> </a></div>
+					</div>
+				</div>
+			</div>
+			<div class="info">Copyright © 2010 ~ Design Studios ~ All Rights Reserved</div>
+	</div> 	
+
+</body>
+</html>
